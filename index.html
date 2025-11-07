@@ -46,7 +46,7 @@
     .snowflake{
       position: fixed;
       top: -10px;
-      color: #a8d8ff;
+      color: #8ecaff;
       text-shadow: 0 0 4px rgba(0,0,0,.2);
       user-select: none;
       pointer-events: none;
@@ -89,11 +89,12 @@
 
       // 초기에 여러 개, 이후 주기적으로 생성
       for (let i = 0; i < 40; i++) setTimeout(flake, Math.random() * 1200);
-      setInterval(flake, 300);   // 숫자 ↓ 눈 더 많이 / ↑ 눈 덜
+      setInterval(flake, 200);   // 숫자 ↓ 눈 더 많이 / ↑ 눈 덜
     })();
   </script>
 </body>
 </html>
+
 
 
 
