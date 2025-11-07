@@ -52,7 +52,7 @@
       pointer-events: none;
       animation: fall linear forwards;
       will-change: transform, opacity;
-      z-index: 2; /* 이미지 위로 보이게 2 */
+      z-index: 0; /* 이미지 위로 보이게 2 */
     }
     @keyframes fall { to { transform: translateY(110vh); opacity: .15; } }
 
@@ -89,8 +89,9 @@
 
       // 초기에 여러 개, 이후 주기적으로 생성
       for (let i = 0; i < 40; i++) setTimeout(flake, Math.random() * 1200);
-      setInterval(flake, 180);   // 숫자 ↓ 눈 더 많이 / ↑ 눈 덜
+      setInterval(flake, 300);   // 숫자 ↓ 눈 더 많이 / ↑ 눈 덜
     })();
   </script>
 </body>
 </html>
+
